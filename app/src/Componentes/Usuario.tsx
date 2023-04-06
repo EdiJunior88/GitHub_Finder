@@ -12,7 +12,7 @@ const Usuario = ({
   return (
     <div>
       <p>{login}</p>
-      <img src={avatar_url} alt={login} />
+      <img className="h-36 mx-auto border border-2 border-blue-950 rounded-lg" src={avatar_url} alt={login} />
       <p>{location}</p>
       <p>{bio}</p>
       <p>Seguidores</p>
