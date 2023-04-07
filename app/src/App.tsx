@@ -3,12 +3,11 @@ import GitHubPesquisa from "./Componentes/GitHubPesquisa";
 
 const App = () => {
   return (
-    <>
-      <div className="container mx-auto text-center mt-24 flex flex-col items-center justify-center">
-        <span className="font-['Noto Sans']">GitHub Finder</span>
+    <div className="bg-gradient-to-b from-verde-clarinho from-10% to-white">
+      <div className="container mx-auto h-auto text-center flex flex-col items-center justify-center w-1/3">
         <GitHubPesquisa />
       </div>
-    </>
+    </div>
   );
 };
 

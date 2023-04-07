@@ -11,6 +11,7 @@ const GitHubPesquisa = () => {
   const [usuario, setUsuario] = useState<InterfaceUsuario | null>(null);
   const [mensagemErro, setMensagemErro] = useState(false);
 
+  //Chamando a API do GitHub
   const buscarUsuario = async () => {
     try {
       const respostaUsuario = await axios.get<InterfaceUsuario>(
@@ -25,18 +26,32 @@ const GitHubPesquisa = () => {
     }
   };
 
+  //Evento dispara ao dar ENTER no input
+  const handleKeyDown = (evento: React.KeyboardEvent<HTMLElement>) => {
+    if (evento.key === "Enter") {
+      buscarUsuario();
+    }
+  };
+
   return (
-    <div>
-      <div className="flex items-center justify-center">
+    <div className='container w-9/12 mt-8 py-5 bg-blue-950 rounded-lg'>
+      <h1 className="font-['Noto Sans'] text-white text-3xl font-bold">
+        GitHub Finder
+      </h1>
+      <div className=' w-auto flex items-center justify-center'>
         <input
-          className='bg-blue-950 text-white my-7 mr-2 px-11 py-1 rounded-md placeholder-red-100 placeholder:text-end'
+          className='text-blue-950 w-4/6 my-7 mr-3 pl-3 py-1 rounded-md placeholder-blue-950 placeholder:text-start'
           type='text'
           placeholder='Digite o nome do usuário'
           value={nomeUsuario}
           onChange={(evento) => setNomeUsuario(evento.target.value)}
+          onKeyDown={handleKeyDown}
         />
         <button onClick={buscarUsuario}>
-          <FontAwesomeIcon className='h-6' icon={faMagnifyingGlass} />
+          <FontAwesomeIcon
+            className='h-6 text-azul-clarinho'
+            icon={faMagnifyingGlass}
+          />
         </button>
       </div>
 
