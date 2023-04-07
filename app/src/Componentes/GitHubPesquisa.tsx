@@ -30,12 +30,7 @@ const GitHubPesquisa = () => {
         `http://api.github.com/users/${nomeUsuario}`
       );
       const respostaRepositorio = await axios.get<InterfaceRepositorio[]>(
-        `https://api.github.com/users/${nomeUsuario}/repos?sort=stars&per_page=5&order=desc`
-      );
-      const ordemEstrelas = setRepositorio(
-        respostaRepositorio.data
-          .sort((a, b) => b.stargazers_count - a.stargazers_count)
-          .slice(0, 5)
+        `https://api.github.com/users/${nomeUsuario}/repos?per_page=80&page=1`
       );
 
       setMensagemErro(false);
@@ -48,7 +43,12 @@ const GitHubPesquisa = () => {
     }
   }
 
-  //Evento dispara ao dar ENTER no input
+  //Ordenar 5 repositórios e por maiores estrelas
+  const estrelasRepositorios = repositorio
+    .sort((a, b) => b.stargazers_count - a.stargazers_count)
+    .slice(0, 5);
+
+  //Evento dispara ao apertar a tecla ENTER no input
   const teclaEnterBusca = (evento: React.KeyboardEvent<HTMLElement>) => {
     if (evento.key === "Enter") {
       buscarUsuario();
@@ -84,7 +84,7 @@ const GitHubPesquisa = () => {
 
         {repositorio.length > 0 && (
           <ul>
-            {repositorio.map((repositorios, id) => {
+            {estrelasRepositorios.map((repositorios, id) => {
               return (
                 <li key={id}>
                   <Repositorio
