@@ -1,33 +1,55 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import axios from "axios";
-import { InterfaceUsuario } from "../Interfaces/interface";
+import {
+  InterfaceRepositorio,
+  InterfaceUsuario,
+} from "../Interfaces/interface";
 import Usuario from "./Usuario";
 import MensagemErro from "./MensagemErro";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
+import Repositorio from "./Repositorio";
 
 const GitHubPesquisa = () => {
   const [nomeUsuario, setNomeUsuario] = useState("");
   const [usuario, setUsuario] = useState<InterfaceUsuario | null>(null);
   const [mensagemErro, setMensagemErro] = useState(false);
+  const [repositorio, setRepositorio] = useState<InterfaceRepositorio[]>([]);
+  const [pesquisaVazio] = useState("");
 
   //Chamando a API do GitHub
-  const buscarUsuario = async () => {
+  useEffect(() => {
+    if (pesquisaVazio !== "") {
+      buscarUsuario();
+    }
+  }, [nomeUsuario]);
+
+  async function buscarUsuario() {
     try {
       const respostaUsuario = await axios.get<InterfaceUsuario>(
         `http://api.github.com/users/${nomeUsuario}`
       );
+      const respostaRepositorio = await axios.get<InterfaceRepositorio[]>(
+        `https://api.github.com/users/${nomeUsuario}/repos?sort=stars&per_page=5&order=desc`
+      );
+      const ordemEstrelas = setRepositorio(
+        respostaRepositorio.data
+          .sort((a, b) => b.stargazers_count - a.stargazers_count)
+          .slice(0, 5)
+      );
 
       setMensagemErro(false);
       setUsuario(respostaUsuario.data);
+      setRepositorio(respostaRepositorio.data);
     } catch (erro) {
       setUsuario(null);
+      setRepositorio([]);
       setMensagemErro(true);
     }
-  };
+  }
 
   //Evento dispara ao dar ENTER no input
-  const handleKeyDown = (evento: React.KeyboardEvent<HTMLElement>) => {
+  const teclaEnterBusca = (evento: React.KeyboardEvent<HTMLElement>) => {
     if (evento.key === "Enter") {
       buscarUsuario();
     }
@@ -45,7 +67,7 @@ const GitHubPesquisa = () => {
           placeholder='Digite o nome do usuário'
           value={nomeUsuario}
           onChange={(evento) => setNomeUsuario(evento.target.value)}
-          onKeyDown={handleKeyDown}
+          onKeyDown={teclaEnterBusca}
         />
         <button onClick={buscarUsuario}>
           <FontAwesomeIcon
@@ -57,7 +79,25 @@ const GitHubPesquisa = () => {
 
       <div>
         {usuario && <Usuario {...usuario} />}
+
         {mensagemErro && <MensagemErro />}
+
+        {repositorio.length > 0 && (
+          <ul>
+            {repositorio.map((repositorios, id) => {
+              return (
+                <li key={id}>
+                  <Repositorio
+                    name={repositorios.name}
+                    html_url={repositorios.html_url}
+                    description={repositorios.description}
+                    stargazers_count={repositorios.stargazers_count}
+                  />
+                </li>
+              );
+            })}
+          </ul>
+        )}
       </div>
     </div>
   );
