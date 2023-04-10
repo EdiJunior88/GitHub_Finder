@@ -26,17 +26,13 @@ const PaginaRepositorios = () => {
     .slice(0, 5);
 
   return (
-    <div className='container mx-auto h-auto text-center flex flex-col items-center justify-center w-1/3'>
-      <div className='container w-9/12 mt-8 py-5 bg-blue-950 rounded-lg'>
+    <div className='container w-screen md:w-3/5 mx-auto h-auto text-center flex flex-col items-center justify-center'>
+      <div className='mt-8 pt-5 bg-blue-950 rounded-lg'>
         <h1 className="font-['Noto Sans'] text-white text-3xl font-bold">
           Repositórios
         </h1>
 
         <div>
-          <Link to='/'>
-            <button>Voltar</button>
-          </Link>
-
           {repositorio.length > 0 && (
             <ul>
               {estrelasRepositorios.map((repositorios, id) => {
@@ -49,12 +45,19 @@ const PaginaRepositorios = () => {
                       stargazers_count={repositorios.stargazers_count}
                       forks_count={repositorios.forks_count}
                     />
+                    {id !== estrelasRepositorios.length - 1 && <hr className='w-2/3 mx-auto border-azul-clarinho' />}
                   </li>
                 );
               })}
             </ul>
           )}
         </div>
+      </div>
+
+      <div className='container mx-auto my-5'>
+        <Link to='/'>
+          <button>Voltar</button>
+        </Link>
       </div>
     </div>
   );

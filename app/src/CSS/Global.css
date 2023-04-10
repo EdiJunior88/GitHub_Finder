@@ -2,11 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-
-p, h1 {
+p,
+h1 {
   color: #fff;
-}
-
-.hide {
-  display: none;
 }

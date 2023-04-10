@@ -12,16 +12,29 @@ const Repositorio = ({
   forks_count,
 }: InterfaceRepositorio) => {
   return (
-    <div>
-      <p className='text-red-500'>{name}</p>
-      <p>{html_url}</p>
-      <p>{description}</p>
-      <p>
-        <FontAwesomeIcon icon={faStarHalfStroke} /> {stargazers_count}
-      </p>
-      <p>
-        <FontAwesomeIcon icon={faCodeFork} /> {forks_count}
-      </p>
+    <div className='container'>
+      <div className='w-full my-7'>
+        <span className='text-salmao-clarinho'>{name}</span>
+
+        <p className='py-2 px-5 break-all'>
+          <a href={html_url} target='_blank'>
+            {html_url}
+          </a>
+        </p>
+
+        <p className='px-5 md:px-32 flex justify-center text-justify text-verde-clarinho'>
+          {description}
+        </p>
+
+        <div className='gap-5 flex justify-center py-2'>
+          <p>
+            <FontAwesomeIcon icon={faStarHalfStroke} /> {stargazers_count}
+          </p>
+          <p>
+            <FontAwesomeIcon icon={faCodeFork} /> {forks_count}
+          </p>
+        </div>
+      </div>
     </div>
   );
 };

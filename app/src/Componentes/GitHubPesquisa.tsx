@@ -55,8 +55,8 @@ const GitHubPesquisa = () => {
   };
 
   return (
-    <div className='container mx-auto h-auto text-center flex flex-col items-center justify-center w-1/3'>
-      <div className='container w-9/12 mt-8 py-5 bg-blue-950 rounded-lg'>
+    <div className='container md:w-2/5 mx-auto h-auto text-center flex flex-col items-center justify-center'>
+      <div className='w-full mt-8 py-5 bg-blue-950 rounded-lg'>
         <h1 className="font-['Noto Sans'] text-white text-3xl font-bold">
           GitHub Finder
         </h1>
@@ -85,7 +85,7 @@ const GitHubPesquisa = () => {
         </div>
       </div>
 
-      <div className='container mx-auto mt-5'>
+      <div className='container mx-auto my-5'>
         {usuario ? (
           <Link to='/repositorios' onClick={manipularNavegacao}>
             <button>Os 5 melhores repositórios</button>
