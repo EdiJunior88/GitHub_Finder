@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import {
-  InterfaceRepositorio,
   InterfaceUsuario,
 } from "../Interfaces/interface";
 import Usuario from "./Usuario";
@@ -12,30 +11,34 @@ import { Link, useNavigate } from "react-router-dom";
 
 const GitHubPesquisa = () => {
   const [nomeUsuario, setNomeUsuario] = useState("");
-  const navegacao = useNavigate();
-
   const [usuario, setUsuario] = useState<InterfaceUsuario | null>(null);
   const [mensagemErro, setMensagemErro] = useState(false);
   const [pesquisaVazio] = useState("");
 
-  //Chamando a API do GitHub
+  //O useNavigate é um hook para navegar entre diferentes rotas
+  const navegacao = useNavigate();
+
+  //Enquanto o input estiver vazio
+  //a API não será chamada ao abrir a página
   useEffect(() => {
     if (pesquisaVazio !== "") {
       buscarUsuario();
     }
   }, [nomeUsuario]);
 
+  //Redireciona para a página REPOSITÓRIOS
+  //mantendo o usuário pesquisado no input busca
   const manipularNavegacao = (evento: React.FormEvent) => {
     evento.preventDefault();
     navegacao(`/repos/${nomeUsuario}`);
   };
 
+  //Chamando a API do GitHub para pegar os dados do usuário
   async function buscarUsuario() {
     try {
       const respostaUsuario = await axios.get<InterfaceUsuario>(
         `http://api.github.com/users/${nomeUsuario}`
       );
-
       setMensagemErro(false);
       setUsuario(respostaUsuario.data);
     } catch (erro) {
@@ -44,7 +47,7 @@ const GitHubPesquisa = () => {
     }
   }
 
-  //Evento dispara ao apertar a tecla ENTER no input
+  //Evento é acionado ao apertar a tecla ENTER no input
   const teclaEnterBusca = (evento: React.KeyboardEvent<HTMLElement>) => {
     if (evento.key === "Enter") {
       buscarUsuario();
@@ -59,31 +62,35 @@ const GitHubPesquisa = () => {
         </h1>
 
         <div className=' w-auto flex items-center justify-center'>
-            <input
-              className='text-blue-950 w-4/6 my-7 mr-3 pl-3 py-1 rounded-md placeholder-blue-950 placeholder:text-start'
-              type='text'
-              placeholder='Digite o nome do usuário'
-              value={nomeUsuario}
-              onChange={(evento) => setNomeUsuario(evento.target.value)}
-              onKeyDown={teclaEnterBusca}
+          <input
+            className='text-blue-950 w-4/6 my-7 mr-3 pl-3 py-1 rounded-md placeholder-blue-950 placeholder:text-start'
+            type='text'
+            placeholder='Digite o nome do usuário'
+            value={nomeUsuario}
+            onChange={(evento) => setNomeUsuario(evento.target.value)}
+            onKeyDown={teclaEnterBusca}
+          />
+          <button type='submit' onClick={buscarUsuario}>
+            <FontAwesomeIcon
+              className='h-6 text-azul-clarinho'
+              icon={faMagnifyingGlass}
             />
-            <button type='submit' onClick={buscarUsuario}>
-              <FontAwesomeIcon
-                className='h-6 text-azul-clarinho'
-                icon={faMagnifyingGlass}
-              />
-            </button>
+          </button>
         </div>
 
         <div>
           {usuario && <Usuario {...usuario} />}
 
           {mensagemErro && <MensagemErro />}
+        </div>
+      </div>
 
-          <Link to="/repositorios" onClick={manipularNavegacao}>
+      <div className='container mx-auto mt-5'>
+        {usuario ? (
+          <Link to='/repositorios' onClick={manipularNavegacao}>
             <button>Os 5 melhores repositórios</button>
           </Link>
-        </div>
+        ) : null}
       </div>
     </div>
   );

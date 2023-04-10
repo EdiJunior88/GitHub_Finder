@@ -1,18 +1,11 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
-import {
-  InterfaceRepositorio,
-  InterfaceUsuario,
-} from "../Interfaces/interface";
-import Usuario from "../Componentes/Usuario";
-import MensagemErro from "../Componentes/MensagemErro";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
+import { InterfaceRepositorio } from "../Interfaces/interface";
 import { Link, useParams } from "react-router-dom";
 import Repositorio from "../Componentes/Repositorio";
 
-const Repositorios = () => {
-  const {nomeUsuario} = useParams<{nomeUsuario: string}>();
+const PaginaRepositorios = () => {
+  const { nomeUsuario } = useParams<{ nomeUsuario: string }>();
   const [repositorio, setRepositorio] = useState<InterfaceRepositorio[]>([]);
 
   //Chamando a API do GitHub
@@ -27,19 +20,10 @@ const Repositorios = () => {
     fetchRepositorio();
   }, [nomeUsuario]);
 
-  async function buscarUsuario() {}
-
   //Ordenar 5 repositórios e por maiores estrelas
   const estrelasRepositorios = repositorio
     .sort((a, b) => b.stargazers_count - a.stargazers_count)
     .slice(0, 5);
-
-  //Evento dispara ao apertar a tecla ENTER no input
-  const teclaEnterBusca = (evento: React.KeyboardEvent<HTMLElement>) => {
-    if (evento.key === "Enter") {
-      buscarUsuario();
-    }
-  };
 
   return (
     <div className='container mx-auto h-auto text-center flex flex-col items-center justify-center w-1/3'>
@@ -63,6 +47,7 @@ const Repositorios = () => {
                       html_url={repositorios.html_url}
                       description={repositorios.description}
                       stargazers_count={repositorios.stargazers_count}
+                      forks_count={repositorios.forks_count}
                     />
                   </li>
                 );
@@ -75,4 +60,4 @@ const Repositorios = () => {
   );
 };
 
-export default Repositorios;
+export default PaginaRepositorios;
