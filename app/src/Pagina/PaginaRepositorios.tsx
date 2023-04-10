@@ -3,6 +3,7 @@ import axios from "axios";
 import { InterfaceRepositorio } from "../Interfaces/interface";
 import { Link, useParams } from "react-router-dom";
 import Repositorio from "../Componentes/Repositorio";
+import Carregando from "../Componentes/Carregando";
 
 const PaginaRepositorios = () => {
   const { nomeUsuario } = useParams<{ nomeUsuario: string }>();
@@ -27,7 +28,7 @@ const PaginaRepositorios = () => {
 
   return (
     <div className='container w-screen md:w-3/5 mx-auto h-auto text-center flex flex-col items-center justify-center'>
-      <div className='mt-8 pt-5 bg-blue-950 rounded-lg'>
+      <div className='w-full mt-8 py-5 bg-blue-950 rounded-lg'>
         <h1 className="font-['Noto Sans'] text-white text-3xl font-bold">
           Repositórios
         </h1>
@@ -45,7 +46,9 @@ const PaginaRepositorios = () => {
                       stargazers_count={repositorios.stargazers_count}
                       forks_count={repositorios.forks_count}
                     />
-                    {id !== estrelasRepositorios.length - 1 && <hr className='w-2/3 mx-auto border-azul-clarinho' />}
+                    {id !== estrelasRepositorios.length - 1 && (
+                      <hr className='w-2/3 mx-auto border-azul-clarinho' />
+                    )}
                   </li>
                 );
               })}
@@ -53,6 +56,16 @@ const PaginaRepositorios = () => {
           )}
         </div>
       </div>
+
+      {/* Se a quantidade de repositórios for menor ou igual a zero */}
+      {/* A animação de loading vai aparecer por 2s */}
+      {repositorio.length <= 0 ? (
+        <div className='container mx-auto mt-5'>
+          <Carregando intervalo={3000} />
+        </div>
+      ) : (
+        ""
+      )}
 
       <div className='container mx-auto my-5'>
         <Link to='/'>

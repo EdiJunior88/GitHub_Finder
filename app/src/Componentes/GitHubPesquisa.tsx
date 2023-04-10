@@ -1,8 +1,6 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
-import {
-  InterfaceUsuario,
-} from "../Interfaces/interface";
+import { InterfaceUsuario } from "../Interfaces/interface";
 import Usuario from "./Usuario";
 import MensagemErro from "./MensagemErro";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
