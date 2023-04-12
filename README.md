@@ -14,7 +14,7 @@
 <br />
 
 <h3><strong>Modo Mobile</strong></h3>
-<img src="app/src/Imagens/GitHub-Finder-Mobile.jpg" width="50%">
+<img src="app/src/Imagens/GitHub-Finder-mobile.jpg" width="50%">
 
 <hr>
 
