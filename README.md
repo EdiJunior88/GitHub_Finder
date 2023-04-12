@@ -24,9 +24,15 @@
      <td>
       <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB">
     </td>
+    <td>
+      <img src="https://img.shields.io/badge/AXIOS-116b29?style=for-the-badge&logo=axios&logoColor=61DAFB">
+    </td>
   </tr>
 
   <tr>
+    <td>
+      <img src="https://img.shields.io/badge/Font%20Awesome-3c5e0c?style=for-the-badge&logo=fontawesome&logoColor=61DAFB">
+    </td>
     <td>
       <img src="https://img.shields.io/badge/React%20Router%20Dom-7d192d?style=for-the-badge&logo=reactrouter&logoColor=white">
     </td>
