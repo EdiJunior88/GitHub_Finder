@@ -36,7 +36,7 @@ const GitHubPesquisa = () => {
   async function buscarUsuario() {
     try {
       const respostaUsuario = await axios.get<InterfaceUsuario>(
-        `http://api.github.com/users/${nomeUsuario}`
+        `https://api.github.com/users/${nomeUsuario}`
       );
       setMensagemErro(false);
       setUsuario(respostaUsuario.data);
