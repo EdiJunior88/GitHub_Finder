@@ -5,6 +5,9 @@ import { Link, useParams } from "react-router-dom";
 import Repositorio from "../Componentes/Repositorio";
 import Carregando from "../Componentes/Carregando";
 import Botao from "../Componentes/Botao";
+import BotaoRolarPagina from "../Componentes/BotaoRolarPagina";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCaretUp } from "@fortawesome/free-solid-svg-icons";
 
 const PaginaRepositorios = () => {
   const { nomeUsuario } = useParams<{ nomeUsuario: string }>();
@@ -28,7 +31,9 @@ const PaginaRepositorios = () => {
     .slice(0, 5);
 
   return (
-    <div className='container w-screen md:w-3/5 mx-auto h-auto text-center flex flex-col items-center justify-center'>
+    <div
+      className='container w-screen md:w-3/5 mx-auto h-auto text-center flex flex-col items-center justify-center'
+      id='inicio'>
       <div className='w-full mt-8 py-5 bg-blue-950 rounded-lg'>
         <h1 className="font-['Noto Sans'] text-white text-3xl font-bold">
           Repositórios
@@ -70,8 +75,12 @@ const PaginaRepositorios = () => {
 
       <div className='container mx-auto my-5 w-24'>
         <Link to='/'>
-          <Botao text="Voltar" />
+          <Botao text='Voltar' />
         </Link>
+      </div>
+
+      <div className='fixed bottom-5 left-3/4 right-0'>
+        <BotaoRolarPagina scroll={<FontAwesomeIcon icon={faCaretUp} />} />
       </div>
     </div>
   );

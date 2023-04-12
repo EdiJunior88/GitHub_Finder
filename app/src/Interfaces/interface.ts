@@ -22,3 +22,7 @@ export interface InterfaceCarregando {
 export interface InterfaceBotao {
   text: string;
 }
+
+export interface InterfaceBotaoRolarPagina {
+  scroll: any;
+}
