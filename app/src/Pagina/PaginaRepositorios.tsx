@@ -4,6 +4,7 @@ import { InterfaceRepositorio } from "../Interfaces/interface";
 import { Link, useParams } from "react-router-dom";
 import Repositorio from "../Componentes/Repositorio";
 import Carregando from "../Componentes/Carregando";
+import Botao from "../Componentes/Botao";
 
 const PaginaRepositorios = () => {
   const { nomeUsuario } = useParams<{ nomeUsuario: string }>();
@@ -67,9 +68,9 @@ const PaginaRepositorios = () => {
         ""
       )}
 
-      <div className='container mx-auto my-5'>
+      <div className='container mx-auto my-5 w-24'>
         <Link to='/'>
-          <button>Voltar</button>
+          <Botao text="Voltar" />
         </Link>
       </div>
     </div>
