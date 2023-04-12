@@ -17,7 +17,7 @@ const Repositorio = ({
         <span className='text-salmao-clarinho'>{name}</span>
 
         <p className='py-2 px-5 break-all'>
-          <a href={html_url} target='_blank'>
+          <a href={html_url} target='_blank' rel="noopener noreferrer">
             {html_url}
           </a>
         </p>
