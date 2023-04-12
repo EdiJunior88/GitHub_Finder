@@ -24,5 +24,6 @@ export interface InterfaceBotao {
 }
 
 export interface InterfaceBotaoRolarPagina {
-  scroll: any;
+  scroll: string;
+  icone: any;
 }

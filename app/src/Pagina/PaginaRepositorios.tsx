@@ -33,7 +33,7 @@ const PaginaRepositorios = () => {
   return (
     <div
       className='container w-screen md:w-3/5 mx-auto h-auto text-center flex flex-col items-center justify-center'
-      id='inicio'>
+      id=' '>
       <div className='w-full mt-8 py-5 bg-blue-950 rounded-lg'>
         <h1 className="font-['Noto Sans'] text-white text-3xl font-bold">
           Repositórios
@@ -80,7 +80,16 @@ const PaginaRepositorios = () => {
       </div>
 
       <div className='fixed bottom-5 left-3/4 right-0'>
-        <BotaoRolarPagina scroll={<FontAwesomeIcon icon={faCaretUp} />} />
+        <BotaoRolarPagina
+          scroll={" "}
+          icone={
+            <FontAwesomeIcon
+              icon={faCaretUp}
+              size='2xl'
+              style={{ color: "#a0e64e" }}
+            />
+          }
+        />
       </div>
     </div>
   );
