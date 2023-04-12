@@ -1,4 +1,4 @@
-<h3>GitHub Finder</h3>
+<h2>GitHub Finder</h2>
 
 <p>Um projeto que utiliza a API do GitHub para buscar um usuário e mostrar os 5 melhores repositórios com mais estrelas</p>
 
@@ -9,12 +9,16 @@
 <hr>
 
 <h3><strong>Modo Desktop</strong></h3>
-<img src="app/src/Imagens/GitHub-Finder.jpg">
+<p align="center">
+  <img src="app/src/Imagens/GitHub-Finder.jpg">
+</p>
 
 <br />
 
 <h3><strong>Modo Mobile</strong></h3>
-<img src="app/src/Imagens/GitHub-Finder-mobile.jpg" width="50%">
+<p align="center">
+  <img src="app/src/Imagens/GitHub-Finder-mobile.jpg" width="30%">
+</p>
 
 <hr>
 
@@ -81,6 +85,12 @@
     </td>
   </tr>
 </table>
+
+<hr>
+
+<h3>Status do Deploy</h3>
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/88e9c471-16ac-49f0-8e0a-bf0fdcd9ec0e/deploy-status)](https://app.netlify.com/sites/githubfinder-edijunior88/deploys)
 
 <hr>
 
