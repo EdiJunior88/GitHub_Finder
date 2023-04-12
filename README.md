@@ -4,7 +4,17 @@
 
 <hr>
 
-<strong>Link do projeto:</strong> <a href=""></a>
+<strong>Link do projeto:</strong> <a href="https://githubfinder-edijunior88.netlify.app/" target="_blank" >https://githubfinder-edijunior88.netlify.app/</a>
+
+<hr>
+
+<h3><strong>Modo Desktop</strong></h3>
+<img src="app/src/Imagens/GitHub-Finder.jpg">
+
+<br />
+
+<h3><strong>Modo Mobile</strong></h3>
+<img src="app/src/Imagens/GitHub-Finder-Mobile.jpg" width="50%">
 
 <hr>
 
@@ -46,6 +56,12 @@
       <img src="https://img.shields.io/badge/TailWindCSS-000?style=for-the-badge&logo=tailwindcss&logoColor=white">
     </td>
   </tr>
+
+  <tr>
+    <td>
+      <img src="https://img.shields.io/badge/Javascript%20Obfuscator-44473d?style=for-the-badge&logo=npm&logoColor=white">
+    </td>   
+  </tr>
 </table>
 
 <hr>
@@ -78,4 +94,4 @@
 
 <hr>
 
-<h4><b>Status do projeto:</b> 💭 Estudando</h4>
+<h4><b>Status do projeto:</b> ✅ Concluído</h4>
