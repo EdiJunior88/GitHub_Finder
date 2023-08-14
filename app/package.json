@@ -22,7 +22,7 @@
     "@types/react": "^18.2.18",
     "@types/react-dom": "^18.2.7",
     "@vitejs/plugin-react": "^4.0.4",
-    "autoprefixer": "^10.4.14",
+    "autoprefixer": "^10.4.15",
     "javascript-obfuscator": "^4.0.2",
     "postcss": "^8.4.27",
     "rollup-plugin-javascript-obfuscator": "^1.0.4",
