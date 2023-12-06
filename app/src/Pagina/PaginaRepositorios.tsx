@@ -19,7 +19,7 @@ const PaginaRepositorios = () => {
     const fetchRepositorio = async () => {
       // Substitua <seu_token> pelo seu token de autenticação do GitHub
       const token = import.meta.env.VITE_GITHUB_API_KEY;
-      
+
       try {
         const respostaRepositorio = await axios.get<InterfaceRepositorio[]>(
           `https://api.github.com/users/${nomeUsuario}/repos?per_page=80&page=1`,
@@ -60,7 +60,7 @@ const PaginaRepositorios = () => {
             <ul>
               {estrelasRepositorios.map((repositorios, id) => {
                 return (
-                  <li key={id}>
+                  <li key={repositorios.id}>
                     <Repositorio
                       name={repositorios.name}
                       html_url={repositorios.html_url}

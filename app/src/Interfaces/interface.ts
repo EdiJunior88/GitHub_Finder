@@ -8,6 +8,7 @@ export interface InterfaceUsuario {
 }
 
 export interface InterfaceRepositorio {
+  id?: number;
   name: string;
   html_url: string;
   description: string;
