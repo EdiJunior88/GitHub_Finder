@@ -1,4 +1,3 @@
-import React from "react";
 import { InterfaceRepositorio } from "../Interfaces/interface";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faStarHalfStroke } from "@fortawesome/free-regular-svg-icons";

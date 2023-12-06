@@ -25,5 +25,5 @@ export interface InterfaceBotao {
 
 export interface InterfaceBotaoRolarPagina {
   scroll: string;
-  icone: any;
+  icone: React.ReactElement;
 }

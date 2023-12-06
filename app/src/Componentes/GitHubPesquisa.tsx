@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import axios from "axios";
 import { InterfaceUsuario } from "../Interfaces/interface";
 import Usuario from "./Usuario";
@@ -34,9 +34,16 @@ const GitHubPesquisa = () => {
 
   //Chamando a API do GitHub para pegar os dados do usuário
   async function buscarUsuario() {
+    const token = import.meta.env.VITE_GITHUB_API_KEY;
+
     try {
       const respostaUsuario = await axios.get<InterfaceUsuario>(
         `https://api.github.com/users/${nomeUsuario}`,
+        {
+          headers: {
+            Authorization: `Bearer ${token}`,
+          },
+        }
       );
       setMensagemErro(false);
       setUsuario(respostaUsuario.data);
@@ -54,24 +61,24 @@ const GitHubPesquisa = () => {
   };
 
   return (
-    <div className="container md:w-2/5 mx-auto h-auto text-center flex flex-col items-center justify-center">
-      <div className="w-full mt-6 py-5 bg-blue-950 rounded-lg">
+    <div className='container md:w-2/5 mx-auto h-auto text-center flex flex-col items-center justify-center'>
+      <div className='w-full mt-6 py-5 bg-blue-950 rounded-lg'>
         <h1 className="font-['Noto Sans'] text-white text-3xl font-bold">
           GitHub Finder
         </h1>
 
-        <div className=" w-auto flex items-center justify-center">
+        <div className=' w-auto flex items-center justify-center'>
           <input
-            className="text-blue-950 w-4/6 my-5 mr-3 pl-3 py-1 rounded-md placeholder-blue-950 placeholder:text-start"
-            type="text"
-            placeholder="Digite o nome do usuário"
+            className='text-blue-950 w-4/6 my-5 mr-3 pl-3 py-1 rounded-md placeholder-blue-950 placeholder:text-start'
+            type='text'
+            placeholder='Digite o nome do usuário'
             value={nomeUsuario}
             onChange={(evento) => setNomeUsuario(evento.target.value)}
             onKeyDown={teclaEnterBusca}
           />
-          <button type="submit" onClick={buscarUsuario}>
+          <button type='submit' onClick={buscarUsuario}>
             <FontAwesomeIcon
-              className="h-6 text-azul-clarinho"
+              className='h-6 text-azul-clarinho'
               icon={faMagnifyingGlass}
             />
           </button>
@@ -84,10 +91,10 @@ const GitHubPesquisa = () => {
         </div>
       </div>
 
-      <div className="container mx-auto my-5 w-64">
+      <div className='container mx-auto my-5 w-64'>
         {usuario ? (
-          <Link to="/repositorios" onClick={manipularNavegacao}>
-            <Botao text="Os 5 melhores repositórios" />
+          <Link to='/repositorios' onClick={manipularNavegacao}>
+            <Botao text='Os 5 melhores repositórios' />
           </Link>
         ) : null}
       </div>

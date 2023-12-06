@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { InterfaceCarregando } from "../Interfaces/interface";
 
-const Carregando: React.FC<InterfaceCarregando> = ({ intervalo }) => {
+const Carregando = ({ intervalo }: InterfaceCarregando) => {
   const [carregando, setCarregando] = useState(true);
 
   useEffect(() => {
@@ -17,8 +17,8 @@ const Carregando: React.FC<InterfaceCarregando> = ({ intervalo }) => {
   return (
     <>
       {carregando ? (
-        <div className="carregando">
-          <div className="carregando-spinner" />
+        <div className='carregando'>
+          <div className='carregando-spinner' />
         </div>
       ) : (
         ""

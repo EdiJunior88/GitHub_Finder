@@ -1,4 +1,3 @@
-import React from "react";
 import { InterfaceUsuario } from "../Interfaces/interface";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEarthAsia } from "@fortawesome/free-solid-svg-icons";
