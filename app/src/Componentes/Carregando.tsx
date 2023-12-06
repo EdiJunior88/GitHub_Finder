@@ -17,8 +17,8 @@ const Carregando = ({ intervalo }: InterfaceCarregando) => {
   return (
     <>
       {carregando ? (
-        <div className='carregando'>
-          <div className='carregando-spinner' />
+        <div className="carregando">
+          <div className="carregando-spinner" />
         </div>
       ) : (
         ""
