@@ -18,7 +18,7 @@ const Carregando: React.FC<InterfaceCarregando> = ({ intervalo }) => {
     <>
       {carregando ? (
         <div className="carregando">
-          <div className="carregando-spinner"></div>
+          <div className="carregando-spinner" />
         </div>
       ) : (
         ""
