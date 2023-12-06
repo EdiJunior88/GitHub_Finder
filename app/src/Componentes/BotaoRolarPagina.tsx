@@ -15,8 +15,9 @@ const BotaoRolarPagina: React.FC<InterfaceBotaoRolarPagina> = ({
 
   return (
     <button
-      className='container mx-auto h-12 w-12 bg-azul-clarinho rounded-lg'
-      onClick={rolarPagina}>
+      className="container mx-auto h-12 w-12 bg-azul-clarinho rounded-lg"
+      onClick={rolarPagina}
+    >
       {icone}
       {scroll}
     </button>
