@@ -40,13 +40,16 @@ Full tech stack [here](/techstack.md)
 <div align="center">
 
 # Tech Stack File
+
 ![](https://img.stackshare.io/repo.svg "repo") [EdiJunior88/GitHub_Finder](https://github.com/EdiJunior88/GitHub_Finder)![](https://img.stackshare.io/public_badge.svg "public")
 <br/><br/>
 |25<br/>Tools used|01/31/24 <br/>Report generated|
 |------|------|
+
 </div>
 
 ## <img src='https://img.stackshare.io/languages.svg'/> Languages (3)
+
 <table><tr>
   <td align='center'>
   <img width='36' height='36' src='https://img.stackshare.io/service/6727/css.png' alt='CSS 3'>
@@ -76,6 +79,7 @@ Full tech stack [here](/techstack.md)
 </table>
 
 ## <img src='https://img.stackshare.io/frameworks.svg'/> Frameworks (6)
+
 <table><tr>
   <td align='center'>
   <img width='36' height='36' src='https://img.stackshare.io/service/2202/72d087642cfce6fef6f2dabec5bf49e8_400x400.png' alt='Autoprefixer'>
@@ -129,6 +133,7 @@ Full tech stack [here](/techstack.md)
 </table>
 
 ## <img src='https://img.stackshare.io/devops.svg'/> DevOps (4)
+
 <table><tr>
   <td align='center'>
   <img width='36' height='36' src='https://img.stackshare.io/service/8067/default_90dcb1286af7685c68df319c764b80704df1155b.png' alt='Dotenv'>
@@ -166,6 +171,7 @@ Full tech stack [here](/techstack.md)
 </table>
 
 ## Other (1)
+
 <table><tr>
   <td align='center'>
   <img width='36' height='36' src='https://img.stackshare.io/no-img-open-source.png' alt='axios'>
@@ -178,24 +184,23 @@ Full tech stack [here](/techstack.md)
 </tr>
 </table>
 
-
 ## <img src='https://img.stackshare.io/group.svg' /> Open source packages (11)</h2>
 
 ## <img width='24' height='24' src='https://img.stackshare.io/service/1120/lejvzrnlpb308aftn31u.png'/> npm (11)
 
-|NAME|VERSION|LAST UPDATED|LAST UPDATED BY|LICENSE|VULNERABILITIES|
-|:------|:------|:------|:------|:------|:------|
-|[@fortawesome/fontawesome-svg-core](https://www.npmjs.com/@fortawesome/fontawesome-svg-core)|v6.5.1|12/11/23|dependabot[bot] |MIT|N/A|
-|[@fortawesome/free-regular-svg-icons](https://www.npmjs.com/@fortawesome/free-regular-svg-icons)|v6.5.1|12/11/23|dependabot[bot] |CC-BY-4.0,MIT|N/A|
-|[@fortawesome/free-solid-svg-icons](https://www.npmjs.com/@fortawesome/free-solid-svg-icons)|v6.5.1|12/11/23|dependabot[bot] |CC-BY-4.0,MIT|N/A|
-|[@fortawesome/react-fontawesome](https://www.npmjs.com/@fortawesome/react-fontawesome)|v0.2.0|01/16/24|dependabot[bot] |MIT|N/A|
-|[@types/node](https://www.npmjs.com/@types/node)|v20.11.10|01/29/24|dependabot[bot] |MIT|N/A|
-|[@types/react](https://www.npmjs.com/@types/react)|v18.2.48|01/29/24|dependabot[bot] |MIT|N/A|
-|[@types/react-dom](https://www.npmjs.com/@types/react-dom)|v18.2.18|01/29/24|dependabot[bot] |MIT|N/A|
-|[react-dom](https://www.npmjs.com/react-dom)|v18.2.0|01/16/24|dependabot[bot] |MIT|N/A|
-|[react-router-dom](https://www.npmjs.com/react-router-dom)|v6.21.3|01/16/24|dependabot[bot] |MIT|N/A|
-|[tailwindcss](https://www.npmjs.com/tailwindcss)|v3.4.1|01/15/24|dependabot[bot] |MIT|N/A|
-|[vite](https://www.npmjs.com/vite)|v5.0.12|01/19/24|dependabot[bot] |N/A|N/A|
+| NAME                                                                                             | VERSION   | LAST UPDATED | LAST UPDATED BY | LICENSE       | VULNERABILITIES |
+| :----------------------------------------------------------------------------------------------- | :-------- | :----------- | :-------------- | :------------ | :-------------- |
+| [@fortawesome/fontawesome-svg-core](https://www.npmjs.com/@fortawesome/fontawesome-svg-core)     | v6.5.1    | 12/11/23     | dependabot[bot] | MIT           | N/A             |
+| [@fortawesome/free-regular-svg-icons](https://www.npmjs.com/@fortawesome/free-regular-svg-icons) | v6.5.1    | 12/11/23     | dependabot[bot] | CC-BY-4.0,MIT | N/A             |
+| [@fortawesome/free-solid-svg-icons](https://www.npmjs.com/@fortawesome/free-solid-svg-icons)     | v6.5.1    | 12/11/23     | dependabot[bot] | CC-BY-4.0,MIT | N/A             |
+| [@fortawesome/react-fontawesome](https://www.npmjs.com/@fortawesome/react-fontawesome)           | v0.2.0    | 01/16/24     | dependabot[bot] | MIT           | N/A             |
+| [@types/node](https://www.npmjs.com/@types/node)                                                 | v20.11.10 | 01/29/24     | dependabot[bot] | MIT           | N/A             |
+| [@types/react](https://www.npmjs.com/@types/react)                                               | v18.2.48  | 01/29/24     | dependabot[bot] | MIT           | N/A             |
+| [@types/react-dom](https://www.npmjs.com/@types/react-dom)                                       | v18.2.18  | 01/29/24     | dependabot[bot] | MIT           | N/A             |
+| [react-dom](https://www.npmjs.com/react-dom)                                                     | v18.2.0   | 01/16/24     | dependabot[bot] | MIT           | N/A             |
+| [react-router-dom](https://www.npmjs.com/react-router-dom)                                       | v6.21.3   | 01/16/24     | dependabot[bot] | MIT           | N/A             |
+| [tailwindcss](https://www.npmjs.com/tailwindcss)                                                 | v3.4.1    | 01/15/24     | dependabot[bot] | MIT           | N/A             |
+| [vite](https://www.npmjs.com/vite)                                                               | v5.0.12   | 01/19/24     | dependabot[bot] | N/A           | N/A             |
 
 <br/>
 <div align='center'>
