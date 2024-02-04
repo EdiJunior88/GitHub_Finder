@@ -8,20 +8,6 @@
 
 <hr>
 
-<h3>Modo Desktop</h3>
-<p align="center">
-  <img src="app/src/Imagens/GitHub-Finder.jpg">
-</p>
-
-<br />
-
-<h3>Modo Mobile</h3>
-<p align="center">
-  <img src="app/src/Imagens/GitHub-Finder-mobile.jpg" width="30%">
-</p>
-
-<hr>
-
 <h3>Tecnologias Utilizadas</h3>
 
 - <img width='25' height='25' src='https://img.stackshare.io/service/1011/n1JRsFeB_400x400.png' alt='Node.js'/> [Node.js](http://nodejs.org/) – Frameworks (Full Stack)
@@ -36,6 +22,20 @@
 - <img width='25' height='25' src='https://img.stackshare.io/service/21547/default_1aeac791cde11ff66cc0b20dcc6144eeb185c905.png' alt='Vite'/> [Vite](https://vitejs.dev/) – JS Build Tools / JS Task Runners
 
 Para ver todas as tecnologias [clique aqui](/techstack.md)
+
+<hr>
+
+<h3>Modo Desktop</h3>
+<p align="center">
+  <img src="app/src/Imagens/GitHub-Finder.jpg">
+</p>
+
+<br />
+
+<h3>Modo Mobile</h3>
+<p align="center">
+  <img src="app/src/Imagens/GitHub-Finder-mobile.jpg" width="30%">
+</p>
 
 <hr>
 
