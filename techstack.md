@@ -43,7 +43,7 @@ Full tech stack [here](/techstack.md)
 
 ![](https://img.stackshare.io/repo.svg "repo") [EdiJunior88/GitHub_Finder](https://github.com/EdiJunior88/GitHub_Finder)![](https://img.stackshare.io/public_badge.svg "public")
 <br/><br/>
-|25<br/>Tools used|01/31/24 <br/>Report generated|
+|25<br/>Tools used|02/04/24 <br/>Report generated|
 |------|------|
 
 </div>
