@@ -22,7 +22,7 @@
   "devDependencies": {
     "@types/react": "^18.2.79",
     "@types/node": "^20.12.2",
-    "@types/react-dom": "^18.2.23",
+    "@types/react-dom": "^18.2.25",
     "@vitejs/plugin-react": "^4.2.1",
     "autoprefixer": "^10.4.19",
     "javascript-obfuscator": "^4.1.0",
