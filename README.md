@@ -4,7 +4,7 @@
 
 <hr>
 
-<strong>Link do projeto:</strong> <a href="https://githubfinder-edijunior88.netlify.app/" target="_blank" >https://githubfinder-edijunior88.netlify.app/</a>
+<strong>Link do projeto:</strong> <a href="https://edijunior88-githubfinder.netlify.app/" target="_blank" >https://edijunior88-githubfinder.netlify.app/</a>
 
 <hr>
 
@@ -41,7 +41,7 @@ Para ver todas as tecnologias [clique aqui](/techstack.md)
 
 <h3>Status do Deploy</h3>
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/88e9c471-16ac-49f0-8e0a-bf0fdcd9ec0e/deploy-status)](https://app.netlify.com/sites/githubfinder-edijunior88/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/1dc24e13-8604-47d8-971a-6ff8947bfc0e/deploy-status)](https://app.netlify.com/sites/edijunior88-githubfinder/deploys)
 
 <hr>
 
