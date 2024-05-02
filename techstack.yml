@@ -1,8 +1,8 @@
 repo_name: EdiJunior88/GitHub_Finder
-report_id: 95514f480fab5a5d15550159162af4c3
+report_id: 59f25275305ad8a81d8b0e00d9499c26
 version: 0.1
 repo_type: Public
-timestamp: '2024-02-04T14:36:15+00:00'
+timestamp: '2024-05-02T15:33:24+00:00'
 requested_by: EdiJunior88
 provider: github
 branch: main
@@ -51,7 +51,7 @@ tools:
   detection_source_url: https://github.com/EdiJunior88/GitHub_Finder/blob/main/app/package.json
   detection_source: app/package.json
   last_updated_by: dependabot[bot]
-  last_updated_on: 2023-09-25 22:57:46.000000000 Z
+  last_updated_on: 2024-03-27 00:27:08.000000000 Z
 - name: Node.js
   description: A platform built on Chrome's JavaScript runtime for easily building
     fast, scalable network applications
@@ -81,7 +81,7 @@ tools:
 - name: React
   description: A JavaScript library for building user interfaces
   website_url: https://reactjs.org/
-  version: 18.2.0
+  version: 18.3.1
   license: MIT
   open_source: true
   hosted_saas: false
@@ -91,11 +91,11 @@ tools:
   detection_source_url: https://github.com/EdiJunior88/GitHub_Finder/blob/main/app/package-lock.json
   detection_source: app/package.json
   last_updated_by: dependabot[bot]
-  last_updated_on: 2024-01-16 01:33:49.000000000 Z
+  last_updated_on: 2024-05-01 22:32:53.000000000 Z
 - name: React Router
   description: A complete routing solution for React.js
   website_url: https://github.com/rackt/react-router
-  version: 6.21.3
+  version: 6.23.0
   license: MIT
   open_source: true
   hosted_saas: false
@@ -105,7 +105,7 @@ tools:
   detection_source_url: https://github.com/EdiJunior88/GitHub_Finder/blob/main/app/package-lock.json
   detection_source: app/package.json
   last_updated_by: dependabot[bot]
-  last_updated_on: 2024-01-16 01:33:49.000000000 Z
+  last_updated_on: 2024-05-01 22:32:53.000000000 Z
 - name: Tailwind CSS
   description: A utility-first CSS framework for rapid UI development
   website_url: https://tailwindcss.com
@@ -118,7 +118,7 @@ tools:
   detection_source_url: https://github.com/EdiJunior88/GitHub_Finder/blob/main/app/package.json
   detection_source: app/package.json
   last_updated_by: dependabot[bot]
-  last_updated_on: 2024-01-15 22:34:45.000000000 Z
+  last_updated_on: 2024-04-01 22:26:55.000000000 Z
 - name: Dotenv
   description: Loads environment variables from .env for Nodejs projects
   website_url: https://github.com/motdotla/dotenv
@@ -131,7 +131,7 @@ tools:
   detection_source_url: https://github.com/EdiJunior88/GitHub_Finder/blob/main/app/package.json
   detection_source: app/package.json
   last_updated_by: dependabot[bot]
-  last_updated_on: 2024-01-29 22:54:01.000000000 Z
+  last_updated_on: 2024-02-26 22:17:18.000000000 Z
 - name: Git
   description: Fast, scalable, distributed revision control system
   website_url: http://git-scm.com/
@@ -170,7 +170,7 @@ tools:
 - name: axios
   description: Promise based HTTP client for the browser and node.js
   website_url: https://github.com/mzabriskie/axios
-  version: 1.6.7
+  version: 1.6.8
   license: MIT
   open_source: true
   hosted_saas: false
@@ -180,11 +180,11 @@ tools:
   detection_source_url: https://github.com/EdiJunior88/GitHub_Finder/blob/main/app/package-lock.json
   detection_source: app/package.json
   last_updated_by: dependabot[bot]
-  last_updated_on: 2024-01-29 23:44:44.000000000 Z
+  last_updated_on: 2024-03-18 22:17:50.000000000 Z
 - name: "@fortawesome/fontawesome-svg-core"
   description: The iconic font, CSS, and SVG framework
   package_url: https://www.npmjs.com/@fortawesome/fontawesome-svg-core
-  version: 6.5.1
+  version: 6.5.2
   license: MIT
   open_source: true
   hosted_saas: false
@@ -194,11 +194,11 @@ tools:
   detection_source_url: https://github.com/EdiJunior88/GitHub_Finder/blob/main/app/package-lock.json
   detection_source: app/package.json
   last_updated_by: dependabot[bot]
-  last_updated_on: 2023-12-11 22:20:13.000000000 Z
+  last_updated_on: 2024-04-10 01:46:13.000000000 Z
 - name: "@fortawesome/free-regular-svg-icons"
   description: The iconic font, CSS, and SVG framework
   package_url: https://www.npmjs.com/@fortawesome/free-regular-svg-icons
-  version: 6.5.1
+  version: 6.5.2
   license: CC-BY-4.0,MIT
   open_source: true
   hosted_saas: false
@@ -208,11 +208,11 @@ tools:
   detection_source_url: https://github.com/EdiJunior88/GitHub_Finder/blob/main/app/package-lock.json
   detection_source: app/package.json
   last_updated_by: dependabot[bot]
-  last_updated_on: 2023-12-11 22:20:13.000000000 Z
+  last_updated_on: 2024-04-10 01:46:13.000000000 Z
 - name: "@fortawesome/free-solid-svg-icons"
   description: The iconic font, CSS, and SVG framework
   package_url: https://www.npmjs.com/@fortawesome/free-solid-svg-icons
-  version: 6.5.1
+  version: 6.5.2
   license: CC-BY-4.0,MIT
   open_source: true
   hosted_saas: false
@@ -222,7 +222,7 @@ tools:
   detection_source_url: https://github.com/EdiJunior88/GitHub_Finder/blob/main/app/package-lock.json
   detection_source: app/package.json
   last_updated_by: dependabot[bot]
-  last_updated_on: 2023-12-11 22:20:13.000000000 Z
+  last_updated_on: 2024-04-10 01:46:13.000000000 Z
 - name: "@fortawesome/react-fontawesome"
   description: Official React component for Font Awesome 5
   package_url: https://www.npmjs.com/@fortawesome/react-fontawesome
@@ -236,11 +236,11 @@ tools:
   detection_source_url: https://github.com/EdiJunior88/GitHub_Finder/blob/main/app/package-lock.json
   detection_source: app/package.json
   last_updated_by: dependabot[bot]
-  last_updated_on: 2024-01-16 01:33:49.000000000 Z
+  last_updated_on: 2024-05-01 22:32:53.000000000 Z
 - name: "@types/node"
   description: TypeScript definitions for Node.js
   package_url: https://www.npmjs.com/@types/node
-  version: 20.11.10
+  version: 20.12.8
   license: MIT
   open_source: true
   hosted_saas: false
@@ -250,11 +250,11 @@ tools:
   detection_source_url: https://github.com/EdiJunior88/GitHub_Finder/blob/main/app/package-lock.json
   detection_source: app/package.json
   last_updated_by: dependabot[bot]
-  last_updated_on: 2024-01-29 22:54:09.000000000 Z
+  last_updated_on: 2024-05-02 01:13:39.000000000 Z
 - name: "@types/react"
   description: TypeScript definitions for React
   package_url: https://www.npmjs.com/@types/react
-  version: 18.2.48
+  version: 18.2.79
   license: MIT
   open_source: true
   hosted_saas: false
@@ -264,11 +264,11 @@ tools:
   detection_source_url: https://github.com/EdiJunior88/GitHub_Finder/blob/main/app/package-lock.json
   detection_source: app/package.json
   last_updated_by: dependabot[bot]
-  last_updated_on: 2024-01-29 22:54:09.000000000 Z
+  last_updated_on: 2024-05-02 01:13:39.000000000 Z
 - name: "@types/react-dom"
   description: TypeScript definitions for React
   package_url: https://www.npmjs.com/@types/react-dom
-  version: 18.2.18
+  version: 18.3.0
   license: MIT
   open_source: true
   hosted_saas: false
@@ -278,11 +278,11 @@ tools:
   detection_source_url: https://github.com/EdiJunior88/GitHub_Finder/blob/main/app/package-lock.json
   detection_source: app/package.json
   last_updated_by: dependabot[bot]
-  last_updated_on: 2024-01-29 22:54:09.000000000 Z
+  last_updated_on: 2024-05-02 01:13:39.000000000 Z
 - name: react-dom
   description: React package for working with the DOM
   package_url: https://www.npmjs.com/react-dom
-  version: 18.2.0
+  version: 18.3.1
   license: MIT
   open_source: true
   hosted_saas: false
@@ -292,11 +292,11 @@ tools:
   detection_source_url: https://github.com/EdiJunior88/GitHub_Finder/blob/main/app/package-lock.json
   detection_source: app/package.json
   last_updated_by: dependabot[bot]
-  last_updated_on: 2024-01-16 01:33:49.000000000 Z
+  last_updated_on: 2024-05-01 22:32:53.000000000 Z
 - name: react-router-dom
   description: DOM bindings for React Router
   package_url: https://www.npmjs.com/react-router-dom
-  version: 6.21.3
+  version: 6.23.0
   license: MIT
   open_source: true
   hosted_saas: false
@@ -306,11 +306,11 @@ tools:
   detection_source_url: https://github.com/EdiJunior88/GitHub_Finder/blob/main/app/package-lock.json
   detection_source: app/package.json
   last_updated_by: dependabot[bot]
-  last_updated_on: 2024-01-16 01:33:49.000000000 Z
+  last_updated_on: 2024-05-01 22:32:53.000000000 Z
 - name: tailwindcss
   description: A utility-first CSS framework for rapidly building custom user interfaces
   package_url: https://www.npmjs.com/tailwindcss
-  version: 3.4.1
+  version: 3.4.3
   license: MIT
   open_source: true
   hosted_saas: false
@@ -320,11 +320,11 @@ tools:
   detection_source_url: https://github.com/EdiJunior88/GitHub_Finder/blob/main/app/package-lock.json
   detection_source: app/package.json
   last_updated_by: dependabot[bot]
-  last_updated_on: 2024-01-15 22:34:45.000000000 Z
+  last_updated_on: 2024-04-01 22:26:55.000000000 Z
 - name: vite
   description: Native-ESM powered web dev build tool
   package_url: https://www.npmjs.com/vite
-  version: 5.0.12
+  version: 5.2.10
   open_source: false
   hosted_saas: false
   category: Build, Test, Deploy
@@ -333,4 +333,4 @@ tools:
   detection_source_url: https://github.com/EdiJunior88/GitHub_Finder/blob/main/app/package-lock.json
   detection_source: app/package.json
   last_updated_by: dependabot[bot]
-  last_updated_on: 2024-01-19 22:34:18.000000000 Z
+  last_updated_on: 2024-04-22 22:17:40.000000000 Z
