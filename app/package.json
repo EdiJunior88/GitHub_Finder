@@ -30,6 +30,6 @@
     "rollup-plugin-javascript-obfuscator": "^1.0.4",
     "tailwindcss": "^3.4.3",
     "typescript": "^5.4.5",
-    "vite": "^5.3.2"
+    "vite": "^5.4.2"
   }
 }
